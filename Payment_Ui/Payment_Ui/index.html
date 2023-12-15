@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Information Lookup</title>
+    <link rel="stylesheet" href="SFP.css">
+</head>
+<script>
+    function fetchStudentDetails() {
+        const form = document.getElementById("lookupForm");
+        const regNumber = form.regNumber.value;
+    
+        const xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === XMLHttpRequest.DONE) {
+                if (xhr.status === 200) {
+                    document.getElementById("studentDetails").innerHTML = xhr.responseText;
+                } else {
+                    document.getElementById("studentDetails").innerHTML = "Error fetching details.";
+                }
+            }
+        };
+    
+        xhr.open("POST", "lookup.php", true);
+        xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xhr.send("regNumber=" + encodeURIComponent(regNumber));
+        document.getElementById("lookupForm").style.display = "none";
+    }
+    </script>
+    
+<body>
+    <center>
+        <img id="ptu" src="../IP/images/ptu-logo.png" alt="PTU logo" onerror=this.src="../images/ptu-logo.png" height="150px">
+        <h1 id="title">PUDUCHERRY TECHNOLOGICAL UNIVERSITY</h1>
+        <h2>Online Fee</h2>
+        <form id="lookupForm">
+            <input type="text" name="regNumber" required placeholder="Registration number">
+            <input type="button" value="Fetch Details" onclick="fetchStudentDetails()">
+        </form>
+        <div id="studentDetails"></div>        
+    </center>
+</body>
+</html>

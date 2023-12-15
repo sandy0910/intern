@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* Set body background color */
+body {
+  color: white;
+  background-color: #222222;
+}
+
+/* Set global font family to Poppins */
+body,
+h1 {
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  color: white;
+}
+
+#ptu {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 0;
+  /* Add this line to remove bottom margin */
+}
+
+#title {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 20px;
+  /* or adjust as needed */
+}
+
+h1 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 0;
+  /* Add this line to remove bottom margin */
+}
+
+table {
+  border-collapse: collapse;
+  width: auto;
+  height: auto;
+  text-align: center;
+  padding: 5px;
+}
+
+th {
+  background-color: #757575;
+}
+
+td,
+th {
+  border: 1px solid white;
+  padding: 5px;
+  width: auto;
+  height: auto;
+  /* padding: 8px; */
+}
+
+/* Alternate row background colors */
+tr:nth-child(even) {
+  background-color: #252525;
+}
+
+/* Header row styles */
+thead {
+  background-color: #757575;
+  color: white;
+}
+
+select {
+  width: auto;
+  height: auto;
+  background-color: #3B3B3B;
+  color: white;
+  padding: 10px;
+  font-family: 'Poppins';
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type] {
+  width: auto;
+  height: auto;
+  background-color: #3B3B3B;
+  color: white;
+  padding: 10px;
+  font-family: 'Poppins';
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  width: auto;
+  height: auto;
+  background-color: #3B3B3B;
+  color: white;
+  padding: 10px;
+  font-family: 'Poppins';
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  cursor: auto;
+}
+
+button:hover {
+  background-color: #757575;
+}
+
+#insertForm {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  padding: 20px;
+  font-family: 'Poppins';
+  border: 1px solid black;
+  border-radius: 25px;
+  background-color: #252525;
+}

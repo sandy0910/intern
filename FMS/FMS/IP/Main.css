@@ -1,0 +1,452 @@
+/* Use the Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+#ptu {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#title {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+    /* or adjust as needed */
+}
+
+/* Set body background color */
+body {
+    background-color: #222222;
+    color: white;
+}
+
+/* Set global font family to Poppins */
+body,
+h1,
+a {
+    font-family: 'Poppins', sans-serif;
+}
+
+.par {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+/* Center align all anchor tags and give them some padding */
+a {
+    font-family: 'Poppins';
+    display: inline-block;
+    width: max-content;
+    height: auto;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    background-color: #333;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Change anchor tag styles on hover */
+a:hover {
+    background-color: #555;
+}
+
+.sport-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sport-container a {
+    display: block;
+    text-align: center;
+    width: auto;
+    height: auto;
+    margin: 10px;
+    background-color: #333;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.sport-container img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.sport-container span {
+    display: block;
+    color: #fff;
+    font-family: 'Poppins';
+    font-size: auto;
+    text-decoration: none;
+}
+
+.sport-container a:hover {
+    background-color: #555;
+}
+
+button {
+    font-family: 'Poppins';
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    color: #fff;
+    background-color: #333;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Change anchor tag styles on hover */
+button:hover {
+    background-color: #555;
+}
+
+/* Style the heading */
+h1 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+}
+
+h2 {
+    color: white;
+}
+
+/* Style the links */
+a {
+    transition: background-color 0.3s ease;
+}
+
+/* Style the form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-top: 50px; */
+}
+
+/* Style the form labels */
+label {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#stf_id {
+    margin-left: 82px;
+}
+
+/* Style the form inputs */
+input[type="text"],
+input[type="password"] {
+    background-color: #3B3B3B;
+    caret-color: white;
+    color: white;
+    width: auto;
+    height: auto;
+    margin-top: 10px;
+    padding: 5px;
+    font-family: 'Poppins';
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease;
+}
+
+/* Change input border color on focus */
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #555;
+}
+
+/* Style the form submit button */
+input[type="submit"] {
+    width: auto;
+    height: auto;
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #333;
+    border-radius: 5px;
+    border: none;
+    cursor: auto;
+    transition: background-color 0.3s ease;
+}
+
+/* Change submit button style on hover */
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Style the logout button */
+#logout-button {
+    width: 80px;
+    height: 35px;
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background-color: #333;
+    border-radius: 5px;
+    border: none;
+    cursor: auto;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    transition: background-color 0.3s ease;
+}
+
+#login-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    padding: 20px;
+    font-family: 'Poppins';
+    border: 1px solid black;
+    border-radius: 25px;
+    background-color: #252525;
+}
+
+#login-form input[type="submit"] {
+    padding: 7px;
+}
+
+#tr_update {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: auto;
+    padding: 20px;
+    font-family: 'Poppins';
+    border: 1px solid black;
+    border-radius: 25px;
+    background-color: #252525;
+}
+
+
+#logout-button:hover {
+    background-color: #555;
+}
+
+/* Style the login/logout button */
+#login-logout {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+}
+
+#login-logout-button {
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    color: #fff;
+    background-color: #333;
+    border-radius: 5px;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+#login-logout-button:hover {
+    background-color: #555;
+}
+
+/* Table styles */
+table {
+    border-collapse: collapse;
+    width: auto;
+    margin-top: 25px;
+}
+
+#av:hover {
+    background-color: #555;
+}
+
+td,
+th {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid white;
+    width: auto;
+    padding: 8px;
+}
+
+/* Alternate row background colors */
+tr:nth-child(even) {
+    background-color: #252525;
+}
+
+/* Header row styles */
+thead {
+    background-color: #757575;
+    color: white;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+    padding: 0px;
+    text-align: center;
+}
+
+.mySlides img {
+    vertical-align: middle;
+}
+
+.prev {
+    left: 0;
+    /* Add this property to move the left arrow to the left */
+}
+
+/* Next and previous buttons */
+.prev,
+.next {
+    cursor: auto;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1s;
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* Grid container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    margin-top: 20px;
+}
+
+/* Grid items */
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+}
+
+.grid-item img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.breaking-news-item-date {
+    background-color: #343434;
+    border-radius: 3px;
+    color: #DFDFDF;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding: 3px 10px;
+}
+
+.breaking-news-item-title {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.breaking-news-item-location {
+    color: #999;
+    font-size: 14px;
+    margin: 5px 0 0;
+}
+
+.breaking-news-container {
+    border: 1px;
+    border-radius: 3px;
+    height: auto;
+    overflow: auto;
+    padding: 10px;
+}
+
+/* display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  background-color: #252525;
+  padding: 10px;
+  border-radius: 5px; */
+
+
+.breaking-news-item {
+    display: inline-block;
+    padding: 0 10px;
+    box-sizing: border-box;
+    white-space: nowrap;
+}
+
+#ug_edit {
+    display: inline-block;
+    width: fit-content;
+    height: fit-content;
+}
