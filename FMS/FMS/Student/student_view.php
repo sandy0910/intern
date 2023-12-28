@@ -29,7 +29,7 @@ if(isset($_POST['stu_regno']))
             $prgm_id = $row['prgm_id'];
             $category = $row['quota_of_admission'];
             $mode = $row['mode_of_admission'];
-            $batch = $row['batch'];
+            $batch = $row['batch'];    
             $course = $row['admitted_course'];
         }
     }
