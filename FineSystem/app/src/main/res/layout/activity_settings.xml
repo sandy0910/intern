@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Settings" />
+
+    <!-- Rectangular navigation bar at the bottom -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="#CCCCCC"
+        android:elevation="8dp">
+
+        <!-- Dashboard button -->
+        <Button
+            android:id="@+id/btnDashboard"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Dashboard"
+            android:background="#F75F3E"
+            android:outlineProvider="background"
+            android:stateListAnimator="@null"
+            android:padding="8dp"
+            android:gravity="center"/>
+
+        <!-- Fine button -->
+        <Button
+            android:id="@+id/btnFine"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Fine"
+            android:background="#F75F3E"
+            android:outlineProvider="background"
+            android:stateListAnimator="@null"
+            android:padding="8dp"
+            android:gravity="center"/>
+
+        <!-- Settings button -->
+        <Button
+            android:id="@+id/btnSettings"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:background="#F75F3E"
+            android:outlineProvider="background"
+            android:stateListAnimator="@null"
+            android:padding="8dp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
